@@ -1,0 +1,80 @@
+{
+	"data":[
+		{
+			"id":1,
+			"image":"https://static01.nyt.com/images/2015/10/11/magazine/11mag-minaj-cover/11mag-minaj-cover-facebookJumbo.jpg",
+			"text":"first",
+			"likes":{"count":10,"status":false},
+			"comments":[]
+		},
+
+		{
+			"id":2,
+			"image":"http://www.pixelstalk.net/wp-content/uploads/2015/11/birds-game-of-thrones-high-definition-full-screen-wallpaper-image-free-download.jpg",
+			"text":"second_post",
+			"likes":{"count":1,"status":true},
+			"comments":[]
+		},
+
+		{
+			"id":3,
+			"image":"http://thatgrapejuice.net/wp-content/uploads/2015/12/rihanna-that-grape-juice-1919191-that-grape-juice-10101.png",
+			"text":"third",
+			"likes":{"count":5,"status":false},
+			"comments":[{"text":"first_comment"}]
+		},
+
+		{
+			"id":4,
+			"image":"",
+			"text":"fourth",
+			"likes":{"count":0,"status":false},
+			"comments":[{"text":"4_1st_commnet"}]
+		},
+
+		{
+			"id":5,
+			"image":"http://i.stack.imgur.com/WCveg.jpg",
+			"likes":{"count":2,"status":true},
+			"comments":[]
+		},
+
+		{
+			"id":6,
+			"text":"sixth",
+			"likes":{"count":3,"status":true},
+			"comments":[]
+		},
+
+		{
+			"id":7,
+			"image":"https://theactionhospital.files.wordpress.com/2013/10/breaking-bad-background-hd-wallpaper.png",
+			"text":"seventh",
+			"likes":{"count":6,"status":false},
+			"comments":[]
+		},
+		
+		{
+			"id":8,
+			"image":"http://digitalspyuk.cdnds.net/15/43/320x320/square-ustv-netflix-breaking-bad-1.jpg",
+			"text":"eighth",
+			"likes":{"count":9,"status":false},
+			"comments":[]
+		},
+		
+		{	
+			"id":9,
+			"text":"ninth",
+			"likes":{"count":8,"status":false},
+			"comments":[]
+		},
+
+		{
+			"id":10,
+			"image":"https://images.template.net/wp-content/uploads/2015/04/Self-Breaking-Bad-PSD-Poster.jpg",
+			"text":"tength",
+			"likes":{"count":7,"status":false},
+			"comments":[]
+		}
+	]
+}

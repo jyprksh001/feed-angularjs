@@ -1,0 +1,35 @@
+<div ng-init="dropdown">
+		<select name="singleSelect" ng-model="dropdown"  >
+					<option value="">No Items</option>
+		      <option value="text">Text Only</option>
+		      <option value="image">Image Only</option>
+		      <option value="text-image">Image and Text</option>
+		</select>
+		<br>
+		<br>
+		
+		<div ng-repeat="feed in data|dropdown:dropdown track by $index">
+				<form name={{feed.id}} ng-submit="Callback(commentdata,$index);commentdata=''" >
+					<div ng-if="feed.text">{{feed.text}}</div>
+					<div ng-if="feed.image!='' && feed.image!=undefined">
+						<img src={{feed.image}} style="height:100px; width:100px;" >
+					</div>
+					<div ng-click="likeToggle($index)">
+						<span ng-if="feed.likes.status==true"> 
+							<img src="assets/like.png" style="height:10px; width:10px;" />
+						</span>
+						<span ng-if="feed.likes.status==false"> 
+							<img src="assets/unlike.png" style="height:13px; width:13px;" />
+						</span>
+					</div>
+					<input type="text" ng-model="commentdata"/>
+					<div ng-repeat="comment in feed.comments">
+							<div>{{comment.text}}</div>
+					</div>
+					<br>
+					<br>
+				</form>
+		</div>
+</div>
+
+
