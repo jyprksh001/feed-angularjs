@@ -9,7 +9,7 @@ app.controller('commentController',["$scope","$http","$filter",function($scope,$
 			console.log('where is data');
 		}
 	)
-
+	
 	$scope.submitCallback=function(comment,index){
 		$scope.data[index].comments.push({text:comment});
 	}
