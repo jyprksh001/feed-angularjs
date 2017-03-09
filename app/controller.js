@@ -18,8 +18,4 @@ app.controller('commentController',["$scope","$http","$filter",function($scope,$
 		$scope.data[index].likes.status=!$scope.data[index].likes.status
 	}
 
-	// $scope.filterFunc=function(dropdown){
-	// 	socpe.data=$filter(dropdown)($scope.data,dropdown);
-	// }
-
 }])
