@@ -11,11 +11,19 @@ app.controller('commentController',["$scope","$http","$filter",function($scope,$
 	)
 	
 	$scope.submitCallback=function(comment,index){
-		$scope.data[index].comments.push({text:comment});
+		for(var i=0;i<$scope.data.length;i++){
+			if($scope.data[i].id==index){
+				$scope.data[i].comments.push({text:comment});
+			}
+		}	
 	}
 
 	$scope.updateLike=function(index){
-		$scope.data[index].likes.status=!$scope.data[index].likes.status
+		for(var i=0;i<$scope.data.length;i++){
+			if($scope.data[i].id==index){
+				 $scope.data[i].likes.status=!$scope.data[i].likes.status
+			}
+		}
 	}
-
+	
 }])

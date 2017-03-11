@@ -9,12 +9,12 @@
 		<br>
 		
 		<div ng-repeat="feed in data|dropdown:dropdown track by $index">
-				<form name={{feed.id}} ng-submit="Callback(commentdata,$index);commentdata=''" >
+				<form name={{feed.id}} ng-submit="Callback(commentdata,feed.id);commentdata=''" >
 					<div ng-if="feed.text">{{feed.text}}</div>
 					<div ng-if="feed.image!='' && feed.image!=undefined">
 						<img src={{feed.image}} style="height:100px; width:100px;" >
 					</div>
-					<div ng-click="likeToggle($index)">
+					<div ng-click="likeToggle(feed.id)">
 						<span ng-if="feed.likes.status==true"> 
 							<img src="assets/like.png" style="height:10px; width:10px;" />
 						</span>
